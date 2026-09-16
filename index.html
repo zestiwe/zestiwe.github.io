@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Zestiwe Games</title>
+<meta name="description" content="Zestiwe Games is an indie studio making bright, cozy games with a fresh twist.">
+<link rel="icon" type="image/png" href="favicon.png">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Russo+One&family=Rubik:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #f6f1e8;
+    --card: #fffaf2;
+    --line: #eadfcd;
+    --ink: #4a3a2e;
+    --muted: #7d6a5a;
+    --accent: #c9601f;
+    --button: #e57c30;
+    --button-ink: #ffffff;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #26201c;
+      --card: #2f2823;
+      --line: #43392f;
+      --ink: #f4ece0;
+      --muted: #bfae9c;
+      --accent: #f09846;
+      --button: #e57c30;
+      --button-ink: #1d1814;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font: 400 17px/1.6 "Rubik", system-ui, -apple-system, "Segoe UI", sans-serif;
+  }
+  main {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 56px 20px 40px;
+  }
+  header {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    flex-wrap: wrap;
+  }
+  header img { width: 120px; height: 120px; }
+  .word {
+    font-family: "Russo One", "Arial Black", sans-serif;
+    font-size: clamp(40px, 9vw, 64px);
+    line-height: 1;
+    letter-spacing: 0.01em;
+    margin: 0;
+  }
+  .word small {
+    display: block;
+    margin-top: 8px;
+    font-size: 0.42em;
+    letter-spacing: 0.62em;
+    color: var(--accent);
+  }
+  .lead {
+    margin: 28px 0 44px;
+    font-size: 19px;
+    color: var(--muted);
+    max-width: 34em;
+  }
+  h2 {
+    font-family: "Russo One", "Arial Black", sans-serif;
+    font-weight: 400;
+    font-size: 22px;
+    margin: 0 0 16px;
+  }
+  .game {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    padding: 20px;
+    background: var(--card);
+    border: 1px solid var(--line);
+    border-radius: 20px;
+    flex-wrap: wrap;
+  }
+  .game img { width: 96px; height: 96px; border-radius: 22px; }
+  .game div { flex: 1 1 260px; }
+  .game h3 { margin: 0 0 4px; font-size: 20px; font-weight: 500; }
+  .game p { margin: 0 0 14px; color: var(--muted); }
+  .button {
+    display: inline-block;
+    padding: 9px 18px;
+    border-radius: 999px;
+    background: var(--button);
+    color: var(--button-ink);
+    font-weight: 500;
+    text-decoration: none;
+  }
+  .actions {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 10px 20px;
+  }
+  .link { color: var(--ink); font-size: 15px; }
+  .button:focus-visible, .link:focus-visible, footer a:focus-visible { outline: 3px solid var(--accent); outline-offset: 3px; }
+  footer {
+    margin-top: 48px;
+    padding-top: 20px;
+    border-top: 1px solid var(--line);
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px 24px;
+    font-size: 15px;
+    color: var(--muted);
+  }
+  footer a { color: var(--ink); }
+</style>
+</head>
+<body>
+<main>
+  <header>
+    <img src="emblem.png" alt="Zestiwe Games emblem — an orange slice with a leaf" width="120" height="120">
+    <h1 class="word">ZESTIWE<small>GAMES</small></h1>
+  </header>
+
+  <p class="lead">An indie studio making bright, cozy games with a fresh twist — easy to pick up, hard to put down.</p>
+
+  <section>
+    <h2>Our games</h2>
+    <article class="game">
+      <img src="merge-grid-explorer.png" alt="Merge: Grid Explorer icon" width="96" height="96">
+      <div>
+        <h3>Merge: Grid Explorer</h3>
+        <p>Slide and merge number tiles, chase 2048 and beyond, and collect every tile in the album.</p>
+        <div class="actions">
+          <a class="button" href="https://play.google.com/store/apps/details?id=com.ZestiweGames.MergeGridExplorer">Get it on Google Play</a>
+          <a class="link" href="https://sites.google.com/view/zestiwemerge-privacy/">Privacy policy</a>
+        </div>
+      </div>
+    </article>
+  </section>
+
+  <footer>
+    <span>© 2026 Zestiwe Games</span>
+    <a href="mailto:zestiwegames@gmail.com">zestiwegames@gmail.com</a>
+  </footer>
+</main>
+</body>
+</html>
