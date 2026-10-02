@@ -6,6 +6,9 @@ unity.com, 8716024, DIRECT, 96cabb5fbdde37a7
 # ironSource (LevelPlay)
 ironsrc.com, 683109, DIRECT
 
+# Google AdMob
+google.com, pub-6256829438686186, DIRECT, f08c47fec0942fa0
+
 # Authorized resellers (Unity Ads + ironSource Exchange)
 appads.in, 105536, RESELLER
 appads.in, 106246, RESELLER
