@@ -1,155 +1,120 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" data-doc="home_doc" data-root="">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Zestiwe Games</title>
-<meta name="description" content="Zestiwe Games is an indie studio making bright, cozy games with a fresh twist.">
+<title>Zestiwe Games – bright, cozy games</title>
+<meta name="description" content="Zestiwe Games is an indie studio making bright, cozy games with a fresh twist – easy to pick up, hard to put down.">
+<meta name="theme-color" content="#f6f0e6" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#1d1814" media="(prefers-color-scheme: dark)">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Zestiwe Games">
+<meta property="og:title" content="Zestiwe Games">
+<meta property="og:description" content="Bright, cozy games with a fresh twist.">
+<meta property="og:url" content="https://zestiwe.github.io/">
+<meta property="og:image" content="https://zestiwe.github.io/assets/img/og-studio.png">
+<meta name="twitter:card" content="summary_large_image">
 <link rel="icon" type="image/png" href="favicon.png">
 <link rel="apple-touch-icon" href="apple-touch-icon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Russo+One&family=Rubik:wght@400;500&display=swap" rel="stylesheet">
-<style>
-  :root {
-    --bg: #f6f1e8;
-    --card: #fffaf2;
-    --line: #eadfcd;
-    --ink: #4a3a2e;
-    --muted: #7d6a5a;
-    --accent: #c9601f;
-    --button: #e57c30;
-    --button-ink: #ffffff;
-  }
-  @media (prefers-color-scheme: dark) {
-    :root {
-      --bg: #26201c;
-      --card: #2f2823;
-      --line: #43392f;
-      --ink: #f4ece0;
-      --muted: #bfae9c;
-      --accent: #f09846;
-      --button: #e57c30;
-      --button-ink: #1d1814;
-    }
-  }
-  * { box-sizing: border-box; }
-  body {
-    margin: 0;
-    background: var(--bg);
-    color: var(--ink);
-    font: 400 17px/1.6 "Rubik", system-ui, -apple-system, "Segoe UI", sans-serif;
-  }
-  main {
-    max-width: 720px;
-    margin: 0 auto;
-    padding: 56px 20px 40px;
-  }
-  header {
-    display: flex;
-    align-items: center;
-    gap: 24px;
-    flex-wrap: wrap;
-  }
-  header img { width: 120px; height: 120px; }
-  .word {
-    font-family: "Russo One", "Arial Black", sans-serif;
-    font-size: clamp(40px, 9vw, 64px);
-    line-height: 1;
-    letter-spacing: 0.01em;
-    margin: 0;
-  }
-  .word small {
-    display: block;
-    margin-top: 8px;
-    font-size: 0.42em;
-    letter-spacing: 0.62em;
-    color: var(--accent);
-  }
-  .lead {
-    margin: 28px 0 44px;
-    font-size: 19px;
-    color: var(--muted);
-    max-width: 34em;
-  }
-  h2 {
-    font-family: "Russo One", "Arial Black", sans-serif;
-    font-weight: 400;
-    font-size: 22px;
-    margin: 0 0 16px;
-  }
-  .game {
-    display: flex;
-    gap: 20px;
-    align-items: center;
-    padding: 20px;
-    background: var(--card);
-    border: 1px solid var(--line);
-    border-radius: 20px;
-    flex-wrap: wrap;
-  }
-  .game img { width: 96px; height: 96px; border-radius: 22px; }
-  .game div { flex: 1 1 260px; }
-  .game h3 { margin: 0 0 4px; font-size: 20px; font-weight: 500; }
-  .game p { margin: 0 0 14px; color: var(--muted); }
-  .button {
-    display: inline-block;
-    padding: 9px 18px;
-    border-radius: 999px;
-    background: var(--button);
-    color: var(--button-ink);
-    font-weight: 500;
-    text-decoration: none;
-  }
-  .actions {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    gap: 10px 20px;
-  }
-  .link { color: var(--ink); font-size: 15px; }
-  .button:focus-visible, .link:focus-visible, footer a:focus-visible { outline: 3px solid var(--accent); outline-offset: 3px; }
-  footer {
-    margin-top: 48px;
-    padding-top: 20px;
-    border-top: 1px solid var(--line);
-    display: flex;
-    flex-wrap: wrap;
-    gap: 8px 24px;
-    font-size: 15px;
-    color: var(--muted);
-  }
-  footer a { color: var(--ink); }
-</style>
+<link rel="stylesheet" href="assets/site.css">
+<script>(function(){var r=document.documentElement;r.classList.add("js");try{var t=localStorage.getItem("zg-theme");if(t)r.setAttribute("data-theme",t)}catch(e){}})();</script>
 </head>
 <body>
-<main>
-  <header>
-    <img src="emblem.png" alt="Zestiwe Games emblem — an orange slice with a leaf" width="120" height="120">
-    <h1 class="word">ZESTIWE<small>GAMES</small></h1>
-  </header>
 
-  <p class="lead">An indie studio making bright, cozy games with a fresh twist — easy to pick up, hard to put down.</p>
-
-  <section>
-    <h2>Our games</h2>
-    <article class="game">
-      <img src="merge-grid-explorer.png" alt="Merge: Grid Explorer icon" width="96" height="96">
-      <div>
-        <h3>Merge: Grid Explorer</h3>
-        <p>Slide and merge number tiles, chase 2048 and beyond, and collect every tile in the album.</p>
-        <div class="actions">
-          <a class="button" href="https://play.google.com/store/apps/details?id=com.ZestiweGames.MergeGridExplorer">Get it on Google Play</a>
-          <a class="link" href="https://sites.google.com/view/zestiwemerge-privacy/">Privacy policy</a>
-        </div>
+<header class="topbar">
+  <div class="wrap">
+    <a class="brand display" href="./" aria-label="Zestiwe Games">
+      <img src="emblem.png" alt="" width="36" height="36">
+      <span>ZESTIWE <b>GAMES</b></span>
+    </a>
+    <div class="controls">
+      <div class="lang">
+        <button class="icon-btn lang-btn" type="button" data-lang-toggle aria-haspopup="true" aria-expanded="false" data-i18n-attr="aria-label:lang_label" aria-label="Language">
+          <img data-lang-flag src="assets/img/flags/en.webp" alt="" width="24" height="18">
+          <span data-lang-code>EN</span>
+          <span class="chev" aria-hidden="true"></span>
+        </button>
+        <ul class="lang-menu"></ul>
       </div>
-    </article>
+      <button class="icon-btn theme-btn" type="button" data-theme-toggle data-i18n-attr="aria-label:theme_label;title:theme_label" aria-label="Switch light and dark theme">
+        <span class="mask-icon sun" aria-hidden="true"></span>
+        <span class="mask-icon moon" aria-hidden="true"></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main>
+  <section class="hero">
+    <div class="floaters" aria-hidden="true">
+      <i style="--s:58px;--c:#edc540;--r:-12deg;--x:24px;--y:-30px;--d:9s;left:6%;top:16%" class="light">8</i>
+      <i style="--s:42px;--c:#eee4da;--r:10deg;--x:-18px;--y:26px;--d:11s;left:52%;top:7%">2</i>
+      <i style="--s:70px;--c:#f59563;--r:8deg;--x:-30px;--y:-22px;--d:13s;right:8%;top:20%" class="light">16</i>
+      <i style="--s:48px;--c:#ede0c8;--r:-6deg;--x:20px;--y:24px;--d:10s;right:20%;bottom:6%">4</i>
+      <i style="--s:60px;--c:#edcf72;--r:14deg;--x:28px;--y:-18px;--d:12s;left:3%;bottom:8%" class="light">128</i>
+      <i style="--s:36px;--c:#f67c5f;--r:-16deg;--x:-14px;--y:-20px;--d:8s;right:4%;bottom:10%" class="light">32</i>
+    </div>
+    <div class="wrap hero-inner">
+      <img class="emblem reveal" src="emblem.png" alt="Zestiwe Games emblem – an orange slice with a leaf" width="220" height="220">
+      <div class="reveal" style="--delay:.08s">
+        <p class="eyebrow" data-i18n="eyebrow">Indie game studio</p>
+        <h1 class="wordmark display">ZESTIWE<small>GAMES</small></h1>
+        <p class="tagline" data-i18n="tagline">We make bright, cozy games with a fresh twist – easy to pick up, hard to put down.</p>
+      </div>
+    </div>
   </section>
 
-  <footer>
-    <span>© 2026 Zestiwe Games</span>
-    <a href="mailto:zestiwegames@gmail.com">zestiwegames@gmail.com</a>
-  </footer>
+  <section class="section" aria-labelledby="games-title">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <h2 id="games-title" class="display" data-i18n="games_title">Our games</h2>
+        <p data-i18n="games_sub">Tap a game to take a closer look.</p>
+      </div>
+
+      <div class="games">
+        <!-- Новая игра — копия этой карточки: ссылка на её папку в games/,
+             иконка в assets/img, тексты — ключи в assets/i18n.js -->
+        <a class="game-card reveal" href="games/merge-grid-explorer/">
+          <div class="game-media">
+            <img src="assets/img/merge-icon-512.webp" alt="" width="168" height="168" style="view-transition-name: merge-icon">
+          </div>
+          <div class="game-body">
+            <span class="status" data-i18n="status_out">Out now</span>
+            <h3 class="display" style="view-transition-name: merge-title">Merge: Grid Explorer</h3>
+            <p data-i18n="merge_pitch">A calm number puzzle: swipe, merge and reach 2048 – on three board sizes.</p>
+            <div class="chips">
+              <span class="chip" data-i18n="chip_puzzle">Puzzle</span>
+              <span class="chip">Android</span>
+              <span class="chip" data-i18n="chip_free">Free</span>
+              <span class="chip" data-i18n="chip_langs">16 languages</span>
+            </div>
+            <span class="more"><span data-i18n="more">Take a look</span> <span class="arrow" aria-hidden="true">→</span></span>
+          </div>
+        </a>
+
+        <div class="game-card soon reveal" style="--delay:.1s">
+          <div class="soon-inner">
+            <div class="soon-tiles" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i></div>
+            <h3 class="display" data-i18n="soon_title">Next game</h3>
+            <p data-i18n="soon_text">Something new is brewing. Stay tuned!</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 </main>
+
+<footer class="footer">
+  <div class="wrap">
+    <span>© 2026 Zestiwe Games</span>
+    <span><span data-i18n="contact">Contact</span>: <a href="mailto:zestiwegames@gmail.com">zestiwegames@gmail.com</a></span>
+  </div>
+</footer>
+
+<script src="assets/i18n.js"></script>
+<script src="assets/site.js"></script>
 </body>
 </html>

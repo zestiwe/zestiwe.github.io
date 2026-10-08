@@ -1,0 +1,189 @@
+<!doctype html>
+<html lang="en" data-doc="game_doc" data-root="../../">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Merge: Grid Explorer – Zestiwe Games</title>
+<meta name="description" content="A calm number puzzle: swipe, merge and reach 2048 – on 4×4, 5×5 and 6×6 boards. Three modes, fair leaderboards, daily goals and 21 achievements.">
+<meta name="theme-color" content="#f6f0e6" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#1d1814" media="(prefers-color-scheme: dark)">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Zestiwe Games">
+<meta property="og:title" content="Merge: Grid Explorer">
+<meta property="og:description" content="Swipe, merge, reach 2048 – on 4×4, 5×5 and 6×6 boards.">
+<meta property="og:url" content="https://zestiwe.github.io/games/merge-grid-explorer/">
+<meta property="og:image" content="https://zestiwe.github.io/games/merge-grid-explorer/og.png">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" type="image/png" href="../../favicon.png">
+<link rel="apple-touch-icon" href="../../apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Russo+One&family=Rubik:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../../assets/site.css">
+<script>(function(){var r=document.documentElement;r.classList.add("js");try{var t=localStorage.getItem("zg-theme");if(t)r.setAttribute("data-theme",t)}catch(e){}})();</script>
+</head>
+<body>
+
+<header class="topbar">
+  <div class="wrap">
+    <a class="brand display" href="../../" aria-label="Zestiwe Games">
+      <img src="../../emblem.png" alt="" width="36" height="36">
+      <span>ZESTIWE <b>GAMES</b></span>
+    </a>
+    <div class="controls">
+      <div class="lang">
+        <button class="icon-btn lang-btn" type="button" data-lang-toggle aria-haspopup="true" aria-expanded="false" data-i18n-attr="aria-label:lang_label" aria-label="Language">
+          <img data-lang-flag src="../../assets/img/flags/en.webp" alt="" width="24" height="18">
+          <span data-lang-code>EN</span>
+          <span class="chev" aria-hidden="true"></span>
+        </button>
+        <ul class="lang-menu"></ul>
+      </div>
+      <button class="icon-btn theme-btn" type="button" data-theme-toggle data-i18n-attr="aria-label:theme_label;title:theme_label" aria-label="Switch light and dark theme">
+        <span class="mask-icon sun" aria-hidden="true"></span>
+        <span class="mask-icon moon" aria-hidden="true"></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main class="wrap">
+  <a class="back" href="../../"><span class="arrow" aria-hidden="true">←</span> <span data-i18n="back">All games</span></a>
+
+  <section class="game-hero">
+    <div>
+      <div class="title-row">
+        <img src="../../assets/img/merge-icon-512.webp" alt="" width="96" height="96">
+        <h1 class="game-title display">Merge: Grid Explorer</h1>
+      </div>
+      <p class="pitch reveal" data-i18n="game_pitch">Swipe to move every tile, merge equal numbers and reach 2048 – then keep going on bigger boards.</p>
+      <div class="cta-row reveal" style="--delay:.08s">
+        <a class="button" href="https://play.google.com/store/apps/details?id=com.ZestiweGames.MergeGridExplorer">
+          <span class="mask-icon play i-play" aria-hidden="true"></span>
+          <span><small data-i18n="cta_small">Get it on</small>Google Play</span>
+        </a>
+        <div class="meta">
+          <span class="chip" data-i18n="chip_free">Free</span>
+          <span class="chip">Android</span>
+          <span class="chip" data-i18n="chip_langs">16 languages</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="demo reveal" style="--delay:.15s">
+      <div class="demo-head">
+        <div class="score-box"><span data-i18n="demo_score">Score</span><b data-score>0</b></div>
+        <button class="icon-btn new-btn" type="button" data-new-game data-i18n-attr="aria-label:demo_new;title:demo_new" aria-label="New game">
+          <span aria-hidden="true" style="font-size:20px;line-height:1">↻</span>
+        </button>
+      </div>
+      <div class="board" data-board tabindex="0" role="application" aria-roledescription="2048" data-i18n-attr="aria-label:demo_hint" aria-label="Try it: swipe on the board or use the arrow keys">
+        <div class="cells" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+        <div class="tiles" aria-hidden="true"></div>
+        <div class="board-over" aria-live="polite">
+          <span data-over-text></span>
+          <button class="button" type="button" data-new-game style="min-height:48px;font-size:16px;padding:0 20px"><span data-i18n="demo_again">Play again</span></button>
+        </div>
+      </div>
+      <p class="demo-hint" data-i18n="demo_hint">Try it: swipe on the board or use the arrow keys</p>
+    </div>
+  </section>
+
+  <section class="section" aria-labelledby="shots-title">
+    <div class="section-head reveal">
+      <div>
+        <h2 id="shots-title" class="display" data-i18n="shots_title">A look inside</h2>
+        <p data-i18n="shots_sub">Screenshots from the game</p>
+      </div>
+      <div class="shot-nav">
+        <button class="icon-btn" type="button" data-shots="prev" data-i18n-attr="aria-label:prev" aria-label="Previous screenshots">←</button>
+        <button class="icon-btn" type="button" data-shots="next" data-i18n-attr="aria-label:next" aria-label="Next screenshots">→</button>
+      </div>
+    </div>
+    <div class="shots-wrap reveal">
+      <div class="shots" tabindex="0">
+        <figure><img data-shot="shots/{lang}/02.webp" src="shots/en/02.webp" alt="Screenshot 1" width="540" height="960"></figure>
+        <figure><img data-shot="shots/{lang}/03.webp" src="shots/en/03.webp" alt="Screenshot 2" width="540" height="960" loading="lazy"></figure>
+        <figure><img data-shot="shots/{lang}/04.webp" src="shots/en/04.webp" alt="Screenshot 3" width="540" height="960" loading="lazy"></figure>
+        <figure><img data-shot="shots/{lang}/05.webp" src="shots/en/05.webp" alt="Screenshot 4" width="540" height="960" loading="lazy"></figure>
+        <figure><img data-shot="shots/{lang}/06.webp" src="shots/en/06.webp" alt="Screenshot 5" width="540" height="960" loading="lazy"></figure>
+        <figure><img data-shot="shots/{lang}/07.webp" src="shots/en/07.webp" alt="Screenshot 6" width="540" height="960" loading="lazy"></figure>
+        <figure><img data-shot="shots/{lang}/08.webp" src="shots/en/08.webp" alt="Screenshot 7" width="540" height="960" loading="lazy"></figure>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" aria-labelledby="feat-title">
+    <div class="section-head reveal">
+      <h2 id="feat-title" class="display" data-i18n="feat_title">What's inside</h2>
+    </div>
+    <div class="features">
+      <article class="feature reveal">
+        <div class="f-icon"><div class="sizes"><b>4</b><b>5</b><b>6</b></div></div>
+        <h3 data-i18n="f1_t">Three boards</h3>
+        <p data-i18n="f1_p">4×4, 5×5 and 6×6. A bigger board means a bigger goal: 2048, 4096 and 8192.</p>
+      </article>
+      <article class="feature reveal" style="--delay:.06s">
+        <div class="f-icon"><span class="mask-icon i-mode-time"></span></div>
+        <h3 data-i18n="f2_t">Three ways to play</h3>
+        <p data-i18n="f2_p">Classic with no limits, Time attack with three minutes on the clock and calm Zen.</p>
+      </article>
+      <article class="feature reveal" style="--delay:.12s">
+        <div class="f-icon"><span class="mask-icon i-leaderboard"></span></div>
+        <h3 data-i18n="f3_t">Fair leaderboards</h3>
+        <p data-i18n="f3_p">Every score is checked on the server. A weekly race resets each Monday – the top three win coins.</p>
+      </article>
+      <article class="feature reveal">
+        <div class="f-icon"><span class="mask-icon i-gift"></span></div>
+        <h3 data-i18n="f4_t">Something every day</h3>
+        <p data-i18n="f4_p">A daily goal, a daily bonus that grows with your streak and 21 achievements.</p>
+      </article>
+      <article class="feature reveal" style="--delay:.06s">
+        <div class="f-icon"><span class="mask-icon i-star"></span></div>
+        <h3 data-i18n="f5_t">Make it yours</h3>
+        <p data-i18n="f5_p">Six tile skins, avatars and frames, a nickname – plus light and dark theme.</p>
+      </article>
+      <article class="feature reveal" style="--delay:.12s">
+        <div class="f-icon"><span class="mask-icon i-check"></span></div>
+        <h3 data-i18n="f6_t">Progress that stays</h3>
+        <p data-i18n="f6_p">Sign in with Google Play Games to keep coins, skins and records on a new phone.</p>
+      </article>
+    </div>
+  </section>
+
+  <section class="section" aria-labelledby="info-title">
+    <div class="section-head reveal">
+      <h2 id="info-title" class="display" data-i18n="info_title">Info &amp; support</h2>
+    </div>
+    <div class="links reveal">
+      <a class="link-card" data-doc-link="privacy" href="https://sites.google.com/view/zestiwemerge-privacy/">
+        <span><span data-i18n="l_privacy">Privacy policy</span><small data-i18n="l_privacy_s">What data the game uses</small></span>
+        <span class="arrow" aria-hidden="true">↗</span>
+      </a>
+      <a class="link-card" data-doc-link="terms" href="https://sites.google.com/view/zestiwemerge-privacy/terms">
+        <span><span data-i18n="l_terms">Terms of use</span><small data-i18n="l_terms_s">Coins, purchases and nickname rules</small></span>
+        <span class="arrow" aria-hidden="true">↗</span>
+      </a>
+      <a class="link-card" data-doc-link="privacy" href="https://sites.google.com/view/zestiwemerge-privacy/">
+        <span><span data-i18n="l_delete">Delete your data</span><small data-i18n="l_delete_s">In the game: Settings › Privacy</small></span>
+        <span class="arrow" aria-hidden="true">↗</span>
+      </a>
+      <a class="link-card" href="mailto:zestiwegames@gmail.com?subject=Merge%3A%20Grid%20Explorer%20%E2%80%93%20bug%20report">
+        <span><span data-i18n="l_bug">Report a bug</span><small>zestiwegames@gmail.com</small></span>
+        <span class="arrow" aria-hidden="true">↗</span>
+      </a>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="wrap">
+    <span>© 2026 Zestiwe Games</span>
+    <span><span data-i18n="contact">Contact</span>: <a href="mailto:zestiwegames@gmail.com">zestiwegames@gmail.com</a></span>
+  </div>
+</footer>
+
+<script src="../../assets/i18n.js"></script>
+<script src="../../assets/site.js"></script>
+</body>
+</html>
