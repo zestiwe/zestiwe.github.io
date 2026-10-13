@@ -84,8 +84,15 @@
   // Политика и условия — на языке посетителя, как кнопки в игре:
   // русский и белорусский — русская страница, украинский — украинская
   var SITE = "https://sites.google.com/view/zestiwemerge-privacy/";
+
+  // «Удаление данных» — раздел политики по якорю. Якоря на заголовки ставит
+  // сам Google Sites: заголовок раздела на сайте не удалять и не вставлять
+  // заново, иначе якорь сменится и здесь его придётся обновить
+  var DELETE_ANCHOR = { "": "#h.3nhgj1m956ja", "/ru": "#h.xxkbvxhmc52c", "/uk": "#h.33y1lhjzhi5n" };
+
   function docLink(code, kind) {
     var suffix = code === "ru" || code === "be" ? "/ru" : code === "uk" ? "/uk" : "";
+    if (kind === "delete") return SITE + "privacy-policy" + suffix + DELETE_ANCHOR[suffix];
     if (kind === "privacy") return suffix ? SITE + "privacy-policy" + suffix : SITE;
     return SITE + "terms" + suffix;
   }
