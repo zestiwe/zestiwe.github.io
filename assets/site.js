@@ -97,8 +97,12 @@
     return SITE + "terms" + suffix;
   }
 
+  // Кадры игры — свои на каждом языке сайта: shots/<код языка>/01–06.webp,
+  // те же, что на странице в Google Play. Нет папки языка — английские
+  var SHOT_LANGS = ["en", "ru", "uk", "be", "cs", "de", "da", "fr", "pl", "sv", "fil", "es", "pt", "it", "tr", "id"];
+
   function shotDir(code) {
-    return code === "ru" || code === "be" ? "ru" : code === "uk" ? "uk" : "en";
+    return SHOT_LANGS.indexOf(code) >= 0 ? code : "en";
   }
 
   var current = null;
